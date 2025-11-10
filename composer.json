@@ -1,0 +1,36 @@
+{
+    "name": "projects/wellmed-satu-sehat",
+    "autoload": {
+        "psr-4": {
+            "Projects\\WellmedSatuSehat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hamzah Nur Alfalah",
+            "email": "hamzahnafalah@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Projects\\WellmedSatuSehat\\Providers\\HqServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "hanafalah/laravel-support": "dev-main",
+        "hanafalah/satu-sehat": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "hanafalah/satu-sehat": {
+            "type": "path",
+            "url": "../../repositories/satu-sehat",
+            "options": {
+                "symlink": true
+            }
+        }
+    }
+}
